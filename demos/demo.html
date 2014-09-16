@@ -1,0 +1,128 @@
+<html>
+<head>
+	<title>12span</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap-responsive.css">
+	<script type="text/javascript" src="jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+	<style type="text/css">
+		/*div{background-color: gray}*/
+		.span2,.span4{background-color:gray;}
+		.span1,.span6{background-color:#0044cc;}
+		.span12{background-color: green; }
+		.span7{background-color: red; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span12">这里是一个12格的宽度</div>
+		</div>
+		<div class="row">
+			<div class="span6">这里有6格的宽度</div>
+			<div class="span6">这里有6格的宽度</div>
+		</div>
+		<div class="row">
+			<div class="span4">这里只有4格的宽度</div>
+			<div class="span4">这里只有4格的宽度</div>
+			<div class="span7">这里7格的宽度，如果宽度大于12，那么会换行</div>
+		</div>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>序列号</th>
+					<th>名字</th>
+					<th>城市</th>
+					<th>年龄</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>曹操</td>
+					<td>山东</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>孙权</td>
+					<td>杭州</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>诸葛亮</td>
+					<td>四川</td>
+					<td>26</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- 一些按钮 -->
+		<p>
+			<button class="btn btn-large btn-primary" type="button">关注</button>
+			<button class="btn btn-large" type="button">取消关注</button>
+		</p>
+		<p>
+			<button class="btn btn-primary" type="button">关注</button>
+			<button class="btn" type="button">取消关注</button>
+		</p>
+		<p>
+			<button class="btn btn-small btn-primary" type="button">关注</button>
+			<button class="btn btn-small" type="button">取消关注</button>
+		</p>
+		<p>
+			<button class="btn btn-mini btn-primary" type="button">关注</button>
+			<button class="btn btn-mini" type="button">取消关注</button>
+		</p>
+		<!-- 块级按钮 -->
+		<button class="btn btn-large btn-block btn-primary" type="button">立即付款</button>
+		<button class="btn btn-large btn-block" type="button">取消关注</button>
+		<!-- 关于图标 --> <i class="icon-search"></i> <i class="icon-search icon-white"></i>
+		<div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+				Dropdown
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" href="#">Action</a>
+				</li>
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" href="#">Another action</a>
+				</li>
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" href="#">Something else here</a>
+				</li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" href="#">Separated link</a>
+				</li>
+			</ul>
+		</div>
+		<div class="progress progress-striped active">
+			<div class="bar" style="width: 40%;"></div>
+		</div>
+		<div class="tabbable">
+			<!-- Only required for left/right tabs -->
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#tab1" data-toggle="tab">订单详情</a>
+				</li>
+				<li>
+					<a href="#tab2" data-toggle="tab">产品简介</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab1">
+					<p>这里是订单详情</p>
+				</div>
+				<div class="tab-pane" id="tab2">
+					<p>产品简介</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
